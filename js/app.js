@@ -108,7 +108,7 @@ function addInnerElement(number, name, total){
     tr.innerHTML = `
     <td>${number}</td>
     <td>${name}</td>
-    <td>${total}</td>
+    <td>${total}cm<sup>2</sup></td>
     
     
     

@@ -5,8 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+    <div>
+        <h1>1. What is dom?</h1>
+        <p>The DOM stands for Document Object Model.It is not a programming language but a programming interface for web documents.A web page is a document we can see either on a browser window or on a HTML source.Document is all the elements of a browser window or HTML source In both cases web page is a document that DOM can access and manipulate.DOM manipulate the document by creating, changing and removing elements of the documents.DOM can manipulate all elements by using <script></script> tag.DOM is not a part of JavaScript language but a web API that is used to build website.</p>
+        <h1>Purpose of DOM</h1>
+        <p>The main purpose of DOM is to manipulate or create, change or remove the elements of document.According to W3C, one of the main purpose is to depeloping the DOM to maintain a standard programming interface for HTML and XML documents. DOM can locate elements and modify any attributes in the documnent by their ID, class, tag name and other characteristic.JavaScript language is one of the most popular ways of working with documents using the DOM.
+        </p>
+        <h1>2. How will i select HTML elements using DOM? Name the DOM method</h1>
+        <p>DOM usually selects HTML elements by using getElementsBy method.In this way Dom can select any HTML elements.DOM select or recognize all elements of HTML as node.By using DOM we can select node, parentNode and childNode
+            Here are the methods of getting the HTML elements by using DOM.</p>
+            <ol>
+                <li>getElementsByTagName - Search and get all elements by tag name such as-div,li,p,span and all the other tags.</li>
+                <li>getElementsByClassName - Search and return HTMl collection of elements that matches the class name.</li>
+                <li>getElementsById - Search and get unique element by their unique id.</li>
+                <li>getElementsByName - Search element by name attributes.</li>
+                <li>querySelector - return the first element from the matched elements.</li>
+                <li>querySelectorAll - Return all the elements that matches from the passed selector.</li>
+            </ol>
+
+            <h1>3. What is Event Bubble?</h1>
+            <p>Event Bubble is a concept in the DOM.It happens when an element receives an event and that event bubbles up to its parent and ancestor elements untill it gets to the root elemnt.</p>
+            <p>In HTML there can be elements inside the elements.When we click an element, the click not only gets the element but also all the parent element and grandparent or ancestor element.It will keep bubbling untill it gets to the first or root element.That is the default way of how event bubble works.We can stop this from happening by stopPropagating command. </p>
+
+            <h1>4. What is a callback function and why will i use it?</h1>
+            <p>A callback function in JavaScript is a function that is passed as an argument in another function which is then called inside the parent function to complete an action.In simple way, a function that will be called later after its parent function is done executing.</p>
+            <p>We use callback function to make sure that the function is going to be executed after a specific task is completed,not before completing the specific task.In an eventListener,we first need to run the eventListener function and then inside the function the callback function will be executed if the parent function detects any callback function.In this a way the callback function won't work if the parent function or eventListener is not executing.It helps us to prevent running into errors because of the non-availability of some data that are needed by some other function. </p>
+    </div>
 </body>
 </html>

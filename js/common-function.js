@@ -16,10 +16,11 @@ function changeColor(){
     // document.querySelectorAll('.card').style.backgroundColor = colorsArray[i];
     
     for(const item of cards){
-        item.style.backgroundColor = colorsArray[i];
+        item.traget.style.backgroundColor = colorsArray[i];
         console.log(item)
     }
 }
+
 // function baseColor(){
 //     let i = Math.floor(Math.random()*10);
 //     // document.querySelectorAll('.card').style.backgroundColor = colorsArray[i];
